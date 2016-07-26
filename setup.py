@@ -17,6 +17,7 @@ setup(
     packages=[
         "chosenadmin",
     ],
+    include_package_data=True,
     package_data={'chosenadmin': ['templates/**/*', 'static/**/*']},
     long_description="Adds the Chosen.js plugin to Select and Multi-select elements in Django's admin.",
     classifiers=[
