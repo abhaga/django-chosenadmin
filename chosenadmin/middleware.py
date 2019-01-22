@@ -65,6 +65,7 @@ class ChosenAdminMiddleware(object):
             content = content.replace('</head>', head)
             content = content.replace('</body>', body)
             response.content = content
+            response['Content-Length'] = str(len(response.content))
         return response
 
     def __call__(self, request):
